@@ -59,5 +59,6 @@ public class ProdutosTest {
         String mensagemToast = driver.findElement(By.cssSelector(".toast.rounded")).getText();
         Assertions.assertEquals("O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00", mensagemToast);
 
+        driver.quit();
     }
 }
