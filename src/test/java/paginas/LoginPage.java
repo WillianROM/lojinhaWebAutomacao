@@ -25,7 +25,7 @@ public class LoginPage {
         return this;
     }
 
-    public ListaDeProdutosPage submeterFormularioDeLoginr(){ /* o tipo ListaDeProdutosPage foi usado porque ao clicar no botão entrar irá para a página de lista de produtos*/
+    public ListaDeProdutosPage submeterFormularioDeLogin(){ /* o tipo ListaDeProdutosPage foi usado porque ao clicar no botão entrar irá para a página de lista de produtos*/
         this.driver.findElement(By.xpath("//button[contains(text(),'Entrar')]")).click();
 
         return new ListaDeProdutosPage(this.driver); /*Após clicar em entrar, a próxima página é Lista de Produtos que receberá o navegador*/
