@@ -15,4 +15,8 @@ public class ListaDeProdutosPage {
 
         return new FormularioDeAdicaoDeProdutoPage(this.driver);
     }
+
+    public String capturarMensagemApresentada(){
+        return this.driver.findElement(By.cssSelector(".toast.rounded")).getText();
+    }
 }
